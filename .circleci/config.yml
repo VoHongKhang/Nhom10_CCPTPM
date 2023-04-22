@@ -4,6 +4,8 @@ jobs:
   build:
     docker:
       - image: circleci/node:14-browsers
+    environment:
+      NODE_OPTIONS: --max-old-space-size=4096
     steps:
       - checkout
       - run: npm install
