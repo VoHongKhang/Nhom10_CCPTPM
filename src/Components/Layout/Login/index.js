@@ -26,15 +26,21 @@ export default function Login() {
     });
 
     function login(username_input, password_input) {
+        let flag = false;
         user.forEach((element) => {
             if (
                 element.username === username_input &&
                 element.password === password_input
             ) {
-                localStorage.setItem('isLogin', true);
-                navigate('/');
-            } else alert('Username or Password is incorrect');
+                flag = true;
+            }
         });
+        if (flag === false) {
+            alert('Username or Password is incorrect');
+        } else {
+            localStorage.setItem('isLogin', true);
+            navigate('/');
+        }
     }
     return (
         <div className={cx('body')}>

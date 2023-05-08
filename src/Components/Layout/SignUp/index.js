@@ -27,6 +27,7 @@ export default function SignUp() {
             window.location.href = '/';
         } else alert('Username or Password is incorrect');
     }
+
     return (
         <div className={cx('body')}>
             <div className={cx('wrapper')}>
