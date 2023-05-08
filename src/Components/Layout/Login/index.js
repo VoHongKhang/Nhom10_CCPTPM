@@ -1,6 +1,7 @@
 import { Navigate, useNavigate } from 'react-router-dom';
 import styles from './Login.module.scss';
 import classNames from 'classnames/bind';
+
 export default function Login() {
     const cx = classNames.bind(styles);
     var isLogin = localStorage.getItem('isLogin') || false;
@@ -12,6 +13,17 @@ export default function Login() {
     if (isLogin === 'true') {
         return <Navigate to="/" />;
     }
+
+    // Nhấn Enter để login
+    document.addEventListener('keyup', function (event) {
+        if (event.keyCode === 13) {
+            var username_input =
+                document.getElementsByName('username')[0].value;
+            var password_input =
+                document.getElementsByName('password')[0].value;
+            login(username_input, password_input);
+        }
+    });
 
     function login(username_input, password_input) {
         user.forEach((element) => {
