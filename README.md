@@ -10,7 +10,6 @@ Phát triển giao diện, xử lý cho hệ thống tương tự https://www.ta
 ## Framework
 * React phiên bản 18.0
 
-** DUC ANH
 
 ## Ngôn ngữ sử dụng
 * Ngôn ngữ chính: js
