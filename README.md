@@ -14,7 +14,13 @@ Phát triển giao diện, xử lý cho hệ thống tương tự https://www.ta
 ## Ngôn ngữ sử dụng
 * Ngôn ngữ chính: js
 
-
+# Deploy với Docker
+## Bước 1: Sử dụng câu lệnh để build:
+docker build -t vohongkhang/reac-app:1.0.2 .
+## Bước 2: Kiểm tra đã build thành công chưa
+docker images
+## Bước 3: Chạy docker images đã deploy
+docker run -p 80:3000 --name react-app vohongkhang/react-app:1.0.2
 
 # Run Locally
 ## Clone the project
