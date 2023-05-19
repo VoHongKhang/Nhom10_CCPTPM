@@ -45,6 +45,12 @@ function Header() {
                     <ul>Teams</ul>
                     <ul>Reporting</ul>
                     <ul
+                        visible={() => {
+                            if (localStorage.getItem('isLogin') === 'true') {
+                                return true;
+                            }
+                            return false;
+                        }}
                         onClick={() => {
                             navigate('/admin');
                         }}
