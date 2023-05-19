@@ -118,8 +118,9 @@ export default function SignUp() {
                     className={cx('button')}
                     onClick={() => {
                         var data =
-                            JSON.parse(localStorage.getItem('listUser_CCPM')) ||
-                            [];
+                            JSON.parse(
+                                localStorage.getItem('listUser_Admin'),
+                            ) || [];
                         if (
                             info.password === info.confirmPassword &&
                             info.password !== '' &&
@@ -136,7 +137,7 @@ export default function SignUp() {
                                 role: 'user',
                             });
                             localStorage.setItem(
-                                'listUser_CCPM',
+                                'listUser_Admin',
                                 JSON.stringify(data),
                             );
                             alert('Register success');
