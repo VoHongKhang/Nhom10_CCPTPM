@@ -14,13 +14,8 @@ Phát triển giao diện, xử lý cho hệ thống tương tự https://www.ta
 ## Ngôn ngữ sử dụng
 * Ngôn ngữ chính: js
 
-# Deploy với Docker
-## Bước 1: Sử dụng câu lệnh để build:
-docker build -t vohongkhang/reac-app:1.0.2 .
-## Bước 2: Kiểm tra đã build thành công chưa
-docker images
-## Bước 3: Chạy docker images đã deploy
-docker run -p 80:3000 --name react-app vohongkhang/react-app:1.0.2
+
+
 
 # Run Locally
 ## Clone the project
@@ -31,6 +26,24 @@ cd Nhom10_CCPTPM
 npm install
 ## Start the server
 npm start
+
+# Deploy với Docker
+## Bước 1: cd vào thư mục Nhom10_CCPTPM sau khi clone
+![image](https://github.com/VoHongKhang/Nhom10_CCPTPM/assets/87598819/5c703d9e-97cd-4cc5-a5aa-4a5423294878)
+
+## Bước 2: Sử dụng câu lệnh để build:
+docker build -t vohongkhang/reac-app:1.0.2 .
+![image](https://github.com/VoHongKhang/Nhom10_CCPTPM/assets/87598819/ce10e455-5f3c-41af-89c6-2c5d3e9fe02e)
+
+## Bước 3: Kiểm tra đã build thành công chưa
+docker images
+![image](https://github.com/VoHongKhang/Nhom10_CCPTPM/assets/87598819/97cba82c-758e-4f67-9fa4-05be481a7203)
+
+## Bước 4: Chạy docker images đã deploy
+docker run -p 80:3000 --name react-app vohongkhang/react-app:1.0.2
+![image](https://github.com/VoHongKhang/Nhom10_CCPTPM/assets/87598819/0858e966-68af-47be-8e90-01445dc9eaf2)
+
+## Bước 5: Deploy thành công
 
 # Cài đặt cấu hình để có thể SSH vào Server
 ## Bước 1: Truy cập vào AWS và đăng nhập
