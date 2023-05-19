@@ -44,7 +44,9 @@ docker run -p 80:3000 --name react-app vohongkhang/react-app:1.0.2
 ![image](https://github.com/VoHongKhang/Nhom10_CCPTPM/assets/87598819/0858e966-68af-47be-8e90-01445dc9eaf2)
 
 ### Bước 5: Deploy thành công
-
+Sau đó vào trang đăng ký tài khoản
+![image](https://github.com/VoHongKhang/Nhom10_CCPTPM/assets/87598819/a03c7a9c-ab03-4056-bf45-e7e43619732b)
+Rồi tiến hành đăng nhập
 ## Cài đặt cấu hình để có thể SSH vào Server
 ### Bước 1: Truy cập vào AWS và đăng nhập
 
