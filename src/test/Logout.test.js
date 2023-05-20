@@ -16,7 +16,7 @@ afterAll(async () => {
 test('Logout Success', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -29,14 +29,14 @@ test('Logout Success', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/logout');
+    await driver.get('http://54.227.58.35/logout');
 
 });
 
 test('Logout Failed', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -49,6 +49,6 @@ test('Logout Failed', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/logout');
+    await driver.get('http://54.227.58.35/logout');
 
 });
