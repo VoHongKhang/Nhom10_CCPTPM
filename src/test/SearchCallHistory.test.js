@@ -116,7 +116,7 @@ test('Search Call History Failed By: Contains space characters: Exist Phone', as
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/history');
+    await driver.get('http://54.227.58.35/history');
 
     const searchphone = await driver.findElement(By.className('input_find'));
     await searchphone.sendKeys('80-1796-3952');
