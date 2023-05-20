@@ -16,7 +16,7 @@ afterAll(async () => {
 test('See Report Dashboard', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -28,14 +28,14 @@ test('See Report Dashboard', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/report/dashboard');
+    await driver.get('http://54.227.58.35/report/dashboard');
 
 });
 
 test('See Report Live', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -47,14 +47,14 @@ test('See Report Live', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/report/live');
+    await driver.get('http://54.227.58.35/report/live');
 
 });
 
 test('See Report Inbound', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -66,14 +66,14 @@ test('See Report Inbound', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/report/inbound');
+    await driver.get('http://54.227.58.35/report/inbound');
 
 });
 
 test('See Report Service Level', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -85,14 +85,14 @@ test('See Report Service Level', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/report/servicelevel');
+    await driver.get('http://54.227.58.35/report/servicelevel');
 
 });
 
 test('See Report Outbound', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -104,14 +104,14 @@ test('See Report Outbound', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/report/outbound');
+    await driver.get('http://54.227.58.35/report/outbound');
 
 });
 
 test('See Report Agent', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -123,14 +123,14 @@ test('See Report Agent', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/report/agent');
+    await driver.get('http://54.227.58.35/report/agent');
 
 });
 
 test('See Report Call', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -142,6 +142,6 @@ test('See Report Call', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/report/call');
+    await driver.get('http://54.227.58.35/report/call');
 
 });
