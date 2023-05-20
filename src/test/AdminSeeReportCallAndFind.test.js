@@ -16,7 +16,7 @@ afterAll(async () => {
 test('Name Empty', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -28,7 +28,7 @@ test('Name Empty', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/report/call');
+    await driver.get('http://54.227.58.35/report/call');
 
     const input = await driver.findElement(By.id('input'));
 
@@ -40,7 +40,7 @@ test('Name Empty', async () => {
 test('Name Exists', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -52,7 +52,7 @@ test('Name Exists', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/report/call');
+    await driver.get('http://54.227.58.35/report/call');
 
     const input = await driver.findElement(By.id('input'));
 
@@ -64,7 +64,7 @@ test('Name Exists', async () => {
 test('Name Does Not Exists', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -76,7 +76,7 @@ test('Name Does Not Exists', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/report/call');
+    await driver.get('http://54.227.58.35/report/call');
 
     const input = await driver.findElement(By.id('input'));
 
