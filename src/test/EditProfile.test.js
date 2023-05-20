@@ -17,7 +17,7 @@ afterAll(async () => {
 test('Edit Name Success', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -29,7 +29,7 @@ test('Edit Name Success', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/profile/1');
+    await driver.get('http://54.227.58.35/profile/1');
 
     const name = await driver.findElement(By.id('name'));
     const submit = await driver.findElement(By.id('submit'));
@@ -45,7 +45,7 @@ test('Edit Name Success', async () => {
 test('Edit Name Failed', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -57,7 +57,7 @@ test('Edit Name Failed', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/profile/1');
+    await driver.get('http://54.227.58.35/profile/1');
 
     const name = await driver.findElement(By.id('name'));
     const submit = await driver.findElement(By.id('submit'));
@@ -73,7 +73,7 @@ test('Edit Name Failed', async () => {
 test('Edit Email Success', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -85,7 +85,7 @@ test('Edit Email Success', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/profile/1');
+    await driver.get('http://54.227.58.35/profile/1');
     const emailField1 = await driver.findElement(By.id('email'));
     const submit = await driver.findElement(By.id('submit'));
 
@@ -100,7 +100,7 @@ test('Edit Email Success', async () => {
 test('Edit Phone Success', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -112,7 +112,7 @@ test('Edit Phone Success', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/profile/1');
+    await driver.get('http://54.227.58.35/profile/1');
     const phone = await driver.findElement(By.id('phone'));
     const submit = await driver.findElement(By.id('submit'));
 
@@ -126,7 +126,7 @@ test('Edit Phone Success', async () => {
 test('Edit Address Success', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -138,7 +138,7 @@ test('Edit Address Success', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/profile/1');
+    await driver.get('http://54.227.58.35/profile/1');
     const address = await driver.findElement(By.id('address'));
     const submit = await driver.findElement(By.id('submit'));
 
