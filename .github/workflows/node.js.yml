@@ -18,6 +18,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Jest Report
-          path: ./reports/html-report
+          path: reports/html-report/report.html
 
 
