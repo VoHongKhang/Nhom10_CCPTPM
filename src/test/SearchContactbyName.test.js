@@ -16,7 +16,7 @@ afterAll(async() => {
 test('Search contact by Name Success', async() => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -28,7 +28,7 @@ test('Search contact by Name Success', async() => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/contact');
+    await driver.get('http://54.227.58.35/contact');
 
     const searchInput = await driver.findElement(By.id('input'));
     await searchInput.sendKeys('Ho');
@@ -48,7 +48,7 @@ test('Search contact by Name Success', async() => {
 test('Search contact by Name Failed By: special characters', async() => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -60,7 +60,7 @@ test('Search contact by Name Failed By: special characters', async() => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://54.159.4.186/contact');
+    await driver.get('http://54.227.58.35/contact');
 
     const searchInput = await driver.findElement(By.id('input'));
     await searchInput.sendKeys('80-1796-3"951');
