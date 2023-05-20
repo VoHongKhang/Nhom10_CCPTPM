@@ -1,6 +1,6 @@
 # Nhom10_CCPTPM - Nhóm test
 ## Tên đề tài:
-Phát triển giao diện, xử lý cho hệ thống tương tự https://www.talkdesk.com/cloud-contact-center/customer-experience-analytics/ 
+Phát triển giao diện, xử lý cho hệ thống tương tự https://www.talkdesk.com/cloud-contact-center/customer-experience-analytics/ và xây dựng các testcase
 
 ## Thành viên
 * Võ Hồng Khang - 20110281
