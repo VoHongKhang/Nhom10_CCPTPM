@@ -1,0 +1,27 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name:  Build and push Docker image
+        run: |
+            docker build -t vohongkhang/react-app:1.0.3 .
+            docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
+            docker push vohongkhang/react-app:1.0.3
+
+    
+
+          
+      
+
+
+
