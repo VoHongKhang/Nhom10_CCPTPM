@@ -16,10 +16,12 @@ Phát triển giao diện, xử lý cho hệ thống tương tự https://www.ta
 
 
 ## Test case tự động trên github 
-![image](https://github.com/VoHongKhang/Nhom10_CCPTPM/assets/87598819/2e268577-ad8c-442e-9bea-e54c448a972a)
+![image](https://github.com/VoHongKhang/Nhom10_CCPTPM/assets/87598819/aa35395f-dfcb-4210-b17e-9dca23a965d8)
+
 
 ## Các test case được report lại 
-![image](https://github.com/VoHongKhang/Nhom10_CCPTPM/assets/87598819/874fec56-746d-4e90-ade6-a76419ce5cdd)
+![image](https://github.com/VoHongKhang/Nhom10_CCPTPM/assets/87598819/7bef65d3-4196-4de7-a9d9-447809349ac9)
+
 
 
 ## Run Locally
