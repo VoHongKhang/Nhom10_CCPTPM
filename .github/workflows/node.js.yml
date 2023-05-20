@@ -23,8 +23,9 @@ jobs:
       - name: Copy Jest HTML Reporter files
         run: |
           mkdir -p jest-html-reporters-attach/report
-          cp $GITHUB_WORKSPACE/node_modules/jest-html-reporter/lib/index.js jest-html-reporters-attach/report/
-          cp $GITHUB_WORKSPACE/node_modules/jest-html-reporter/lib/result.js jest-html-reporters-attach/report/
+          cp $GITHUB_WORKSPACE/reports/html-report/jest-html-reporter/lib/index.js jest-html-reporters-attach/report/
+          cp $GITHUB_WORKSPACE/reports/html-report/jest-html-reporter/lib/result.js jest-html-reporters-attach/report/
+
 
           
       
