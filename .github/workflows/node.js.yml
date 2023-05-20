@@ -12,9 +12,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Install dependencies
         run: npm install
-      - name: Test and Generate Report
-        run: npx jest --outputFile=./reports/report.html
-      - name: Upload artifact
+      - name: Test 
+        run: npx jest 
+      - name: Upload artifact and Generate Report
         uses: actions/upload-artifact@v2
         with:
           name: Jest Report
