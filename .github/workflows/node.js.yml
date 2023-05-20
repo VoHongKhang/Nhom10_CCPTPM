@@ -12,21 +12,21 @@ jobs:
         uses: actions/checkout@v2
       - name: Install dependencies
         run: npm install
-#       - name: Test 
-#         run: npx jest 
-#       - name: Upload artifact and Generate Report
-#         uses: actions/upload-artifact@v2
-#         with:
-#           name: Jest Report
-#           path: reports/html-report/report.html
 
       - name: Test
-        run: npx jest --reporters=default jest-html-reporters
+#         run: npx jest --reporters=default jest-html-reporters
+        run: |
+          npx jest --reporters=default jest-html-reporters
+          mkdir -p jest-html-reporters-attach/report
+          cp ./node_modules/jest-html-reporter/lib/index.js jest-html-reporters-attach/report/
+          cp ./node_modules/jest-html-reporter/lib/result.js jest-html-reporters-attach/report/
       - name: Upload artifact and Generate Report
         uses: actions/upload-artifact@v2
         with:
           name: Jest Report
           path: reports/html-report/report.html
+          
+      
 
 
 
