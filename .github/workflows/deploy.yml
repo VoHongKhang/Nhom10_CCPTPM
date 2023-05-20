@@ -2,18 +2,15 @@ name: Deploy
 
 on:
   push:
-    branches: [ main ]
-    
+    branches: [main]
+
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Setup Remote Docker
-        uses: docker/setup-buildx-action@v1
 
       - name: Test Docker
         run: docker --version
@@ -21,7 +18,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build and Push Docker Image
+      - name: Build and push Docker image
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
