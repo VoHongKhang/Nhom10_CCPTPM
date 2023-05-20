@@ -16,7 +16,7 @@ afterAll(async () => {
 test('Signup Success', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/signup');
+    await driver.get('http://54.227.58.35/signup');
 
    
     const fullname = await driver.findElement(By.id('fullname'));
@@ -37,7 +37,7 @@ test('Signup Success', async () => {
 test('Signup Failed Full Name Empty', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/signup');
+    await driver.get('http://54.227.58.35/signup');
 
    
     const fullname = await driver.findElement(By.id('fullname'));
@@ -58,7 +58,7 @@ test('Signup Failed Full Name Empty', async () => {
 test('Signup Failed Phone Empty', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/signup');
+    await driver.get('http://54.227.58.35/signup');
 
    
     const fullname = await driver.findElement(By.id('fullname'));
@@ -79,7 +79,7 @@ test('Signup Failed Phone Empty', async () => {
 test('Signup Failed Email Empty', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/signup');
+    await driver.get('http://54.227.58.35/signup');
 
    
     const fullname = await driver.findElement(By.id('fullname'));
@@ -100,7 +100,7 @@ test('Signup Failed Email Empty', async () => {
 test('Signup Failed Password Empty', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/signup');
+    await driver.get('http://54.227.58.35/signup');
 
    
     const fullname = await driver.findElement(By.id('fullname'));
