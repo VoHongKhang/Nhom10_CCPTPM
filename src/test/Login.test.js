@@ -16,7 +16,7 @@ afterAll(async () => {
 test('Login Success', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://18.206.170.222/login');
+    await driver.get('http://50.19.60.141/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -32,7 +32,7 @@ test('Login Success', async () => {
 test('Login Failed Email', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://18.206.170.222/login');
+    await driver.get('http://50.19.60.141/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -48,7 +48,7 @@ test('Login Failed Email', async () => {
 test('Login Failed Password', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://18.206.170.222/login');
+    await driver.get('http://50.19.60.141/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -64,7 +64,7 @@ test('Login Failed Password', async () => {
 test('Login Failed Account Does Not Exits', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://18.206.170.222/login');
+    await driver.get('http://50.19.60.141/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -80,7 +80,7 @@ test('Login Failed Account Does Not Exits', async () => {
 test('Login Failed Email Invalid', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://18.206.170.222/login');
+    await driver.get('http://50.19.60.141/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
