@@ -17,7 +17,7 @@ afterAll(async () => {
 test('Watch Call History Success', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://50.19.60.141/login');
+    await driver.get('http://54.159.4.186/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -28,14 +28,14 @@ test('Watch Call History Success', async () => {
     await emailField.sendKeys('brenhernandez215@gmail.com');
     await passwordField.sendKeys('XHh9X139h2');
 
-    await driver.get('http://50.19.60.141/history/1');
+    await driver.get('http://54.159.4.186/history/1');
 
 });
 
 test('Watch Call History Failed: Exist call history', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://50.19.60.141/login');
+    await driver.get('http://54.159.4.186/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -47,6 +47,6 @@ test('Watch Call History Failed: Exist call history', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://50.19.60.141/history/1000');
+    await driver.get('http://54.159.4.186/history/1000');
 
 });
