@@ -15,6 +15,11 @@ Phát triển giao diện, xử lý cho hệ thống tương tự https://www.ta
 * Ngôn ngữ chính: js
 
 
+## Test case tự động trên github 
+![image](https://github.com/VoHongKhang/Nhom10_CCPTPM/assets/87598819/2e268577-ad8c-442e-9bea-e54c448a972a)
+
+## Các test case được report lại 
+![image](https://github.com/VoHongKhang/Nhom10_CCPTPM/assets/87598819/874fec56-746d-4e90-ade6-a76419ce5cdd)
 
 
 ## Run Locally
