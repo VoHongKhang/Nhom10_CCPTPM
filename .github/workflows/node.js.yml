@@ -21,7 +21,7 @@ jobs:
 #           path: reports/html-report/report.html
 
       - name: Test
-        run: npx jest --reporters=default --reporters=jest-html-reporters
+        run: npx jest --reporters=default jest-html-reporters
       - name: Upload artifact and Generate Report
         uses: actions/upload-artifact@v2
         with:
