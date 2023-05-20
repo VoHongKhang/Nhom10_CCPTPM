@@ -17,7 +17,7 @@ test('Kiểm tra tính hiển thị của các  phần tử', async() => {
     // Tạo đối tượng WebDriver
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -57,7 +57,7 @@ test('Kiểm tra tính hiển thị của các  phần tử', async() => {
 test('Kiểm tra nội dung của một phần tử', async() => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://54.159.4.186/login');
+    await driver.get('http://54.227.58.35/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
