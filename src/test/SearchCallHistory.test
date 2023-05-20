@@ -16,7 +16,7 @@ afterAll(async () => {
 test('Search Call History Success', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://18.206.170.222/login');
+    await driver.get('http://50.19.60.141/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -28,7 +28,7 @@ test('Search Call History Success', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://18.206.170.222/history');
+    await driver.get('http://50.19.60.141/history');
 
     const searchphone = await driver.findElement(By.className('input_find'));
     await searchphone.sendKeys('80-1796-3951');
@@ -38,7 +38,7 @@ test('Search Call History Success', async () => {
 test('Search Call History Failed By: special characters', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://18.206.170.222/login');
+    await driver.get('http://50.19.60.141/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -50,7 +50,7 @@ test('Search Call History Failed By: special characters', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://18.206.170.222/history');
+    await driver.get('http://50.19.60.141/history');
 
     const searchphone = await driver.findElement(By.className('input_find'));
     await searchphone.sendKeys('80-1796-3"951');
@@ -60,7 +60,7 @@ test('Search Call History Failed By: special characters', async () => {
 test('Search Call History Failed By: Contains alphanumeric characters', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://18.206.170.222/login');
+    await driver.get('http://50.19.60.141/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -72,7 +72,7 @@ test('Search Call History Failed By: Contains alphanumeric characters', async ()
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://18.206.170.222/history');
+    await driver.get('http://50.19.60.141/history');
 
     const searchphone = await driver.findElement(By.className('input_find'));
     await searchphone.sendKeys('80-1796-3a951');
@@ -82,7 +82,7 @@ test('Search Call History Failed By: Contains alphanumeric characters', async ()
 test('Search Call History Failed By: Contains space characters', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://18.206.170.222/login');
+    await driver.get('http://50.19.60.141/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -94,7 +94,7 @@ test('Search Call History Failed By: Contains space characters', async () => {
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://18.206.170.222/history');
+    await driver.get('http://50.19.60.141/history');
 
     const searchphone = await driver.findElement(By.className('input_find'));
     await searchphone.sendKeys('80-1796-39 51');
@@ -104,7 +104,7 @@ test('Search Call History Failed By: Contains space characters', async () => {
 test('Search Call History Failed By: Contains space characters: Exist Phone', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://18.206.170.222/login');
+    await driver.get('http://50.19.60.141/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
@@ -116,7 +116,7 @@ test('Search Call History Failed By: Contains space characters: Exist Phone', as
     await passwordField.sendKeys('XHh9X139h2');
     await submitButton.click();
 
-    await driver.get('http://18.206.170.222/history');
+    await driver.get('http://50.19.60.141/history');
 
     const searchphone = await driver.findElement(By.className('input_find'));
     await searchphone.sendKeys('80-1796-3952');
