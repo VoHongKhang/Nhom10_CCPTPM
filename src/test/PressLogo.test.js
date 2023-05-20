@@ -16,7 +16,7 @@ afterAll(async () => {
 test('SeeInfo', async () => {
     jest.setTimeout(100000);
     // Navigate to the login page
-    await driver.get('http://18.206.170.222/login');
+    await driver.get('http://50.19.60.141/login');
 
     // Find the email and password input fields, and the submit button
     const emailField = await driver.findElement(By.id('email'));
